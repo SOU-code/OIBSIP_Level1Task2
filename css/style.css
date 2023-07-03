@@ -1,0 +1,430 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap");
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+  font-family: "Montserrat", sans-serif;
+}
+/* ----------------Common-------------- */
+section:nth-child(2n) {
+  background-color: #f0f0f0;
+}
+/* -------------Header section---------------- */
+header {
+  opacity: 0.8;
+  height: 60vh;
+  min-height: 45rem;
+  background-image: url(https://ninjasfiles.s3.amazonaws.com/asset_0000000000000020_1549743985_macbook_mouse.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white;
+}
+li a {
+  color: #fff;
+  text-decoration: none;
+}
+.head-center {
+  margin: 5rem 0;
+  text-align: center;
+}
+.head-center h1 {
+  padding-bottom: 2rem;
+}
+.head-center a {
+  padding: 1rem;
+  color: #feee00;
+  text-decoration: none;
+}
+/* -----------About Us----------- */
+#about {
+  text-align: center;
+}
+.profile-img img {
+  display: inline-block;
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  box-shadow: 0px 0px 7px 8px lightgray;
+  position: relative;
+  transform: translateY(-50%);
+  z-index: +1;
+}
+.about-me {
+  padding: 0 10rem;
+  transform: translateY(-7rem);
+}
+/* -----------Skills----------- */
+#skills {
+  padding: 5rem 10rem;
+}
+#skills h2 {
+  text-align: center;
+  color: blue;
+}
+.skills-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.skills-items div {
+  display: block;
+  width: 15rem;
+  height: 3rem;
+  border: 2px solid black;
+  border-radius: 1rem;
+  margin-top: 5rem;
+  padding-left: 1rem;
+}
+.c,
+.sql {
+  background-color: rgb(80, 80, 243);
+  color: #f0f0f0;
+  font-weight: 700;
+}
+.java,
+.css,
+.php {
+  background-color: rgb(163, 4, 177);
+  color: #fa8787;
+  font-weight: 700;
+}
+.html,
+.js {
+  background-color: rgb(254, 76, 0);
+  color: #f0f0f0;
+  font-weight: 700;
+}
+.dsa,
+.bs {
+  background-color: rgb(123, 254, 0);
+  color: #0050fe;
+  font-weight: 700;
+}
+.python,
+.cpp {
+  background-color: rgb(0, 229, 255);
+  color: #fffb00;
+  font-weight: 700;
+}
+/* -------Footer//Contact Us */
+footer {
+  padding: 5rem 10rem;
+  background: linear-gradient(to right, #2857a4, #403066);
+  color: rgb(255, 255, 255);
+}
+footer h2 {
+  text-align: center;
+}
+.contact {
+  padding: 5rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+.form {
+  width: 45%;
+  text-align: center;
+}
+input,
+textarea {
+  width: 100%;
+  background: none;
+  border: none;
+  padding-bottom: 1rem;
+  border-bottom: 3px solid white;
+  margin-bottom: 5rem;
+}
+button {
+  background: none;
+  padding: 0.5rem;
+  border: 0.3rem solid white;
+  color: white;
+  font-weight: 700;
+}
+.address {
+  width: 45%;
+}
+.address h4,
+p {
+  margin-bottom: 1.5rem;
+}
+.contact-media {
+  display: flex;
+  font-size: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.contact-media a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0 2rem;
+}
+/* Portfolio Section */
+#portfolio {
+  padding: 5rem 10rem;
+}
+#portfolio h2 {
+  color: blue;
+  text-align: center;
+}
+.projects-list {
+  padding-top: 5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.project {
+  width: 30rem;
+}
+.project-image {
+  width: 30rem;
+}
+.project-image img {
+  width: 100%;
+}
+.project {
+  text-align: center;
+}
+.project-link a {
+  color: green;
+  font-weight: 700;
+  text-decoration: none;
+}
+/* Work Experience Section */
+#experience {
+  padding: 5rem 10rem;
+}
+#experience h2 {
+  color: blue;
+  text-align: center;
+}
+.work-ex {
+  position: relative;
+  padding-top: 5rem;
+}
+.work {
+  position: relative;
+  width: 45%;
+}
+.work:nth-child(2n + 1) {
+  text-align: right;
+}
+.work:nth-child(2n) {
+  left: 55%;
+}
+.work:nth-child(2n +1)::after {
+  content: "";
+  position: absolute;
+  height: 0.7rem;
+  width: 0.7rem;
+  border-radius: 50%;
+  top: 25%;
+  background-color: red;
+  right: -12%;
+  z-index: 1;
+}
+.work:nth-child(2n)::after {
+  content: "";
+  position: absolute;
+  height: 0.7rem;
+  width: 0.7rem;
+  border-radius: 50%;
+  top: 25%;
+  background-color: red;
+  left: -11.5%;
+  z-index: 1;
+}
+.company {
+  color: orangered;
+}
+.role {
+  font-weight: 500;
+}
+.date {
+  color: #0050fe;
+}
+.letter {
+  color: green;
+  font-weight: 500;
+  text-decoration: none;
+}
+.timeline {
+  position: absolute;
+  border: 3px dashed darkgray;
+  height: 75%;
+  width: 0;
+  top: 10%;
+  left: 50%;
+}
+.airplane {
+  font-size: 2rem;
+  color: orangered;
+  position: sticky;
+  top: 25%;
+  transform: rotate(90deg);
+}
+/* Education Section */
+#education {
+  padding: 5rem 10rem;
+}
+#education h2 {
+  color: blue;
+  text-align: center;
+}
+.education-sec {
+  position: relative;
+  padding-top: 5rem;
+}
+.each-edu {
+  position: relative;
+  width: 45%;
+}
+.each-edu:nth-child(2n) {
+  left: 55%;
+}
+.each-edu:nth-child(2n + 1) {
+  text-align: right;
+}
+.each-edu:nth-child(2n +1)::after {
+  content: "";
+  position: absolute;
+  height: 0.7rem;
+  width: 0.7rem;
+  border-radius: 50%;
+  top: 25%;
+  background-color: red;
+  right: -12%;
+  z-index: 1;
+}
+.each-edu:nth-child(2n)::after {
+  content: "";
+  position: absolute;
+  height: 0.7rem;
+  width: 0.7rem;
+  border-radius: 50%;
+  top: 25%;
+  background-color: red;
+  left: -11.5%;
+  z-index: 1;
+}
+.degree {
+  color: rgb(215, 0, 215);
+}
+.school {
+  font-weight: 500;
+}
+.marks {
+  font-weight: 500;
+  color: rgb(108, 179, 1);
+}
+/* Responsive Design */
+@media(max-width:850px){
+  .projects-list {
+   flex-direction: column;
+  }
+  .project{
+    margin: 5rem auto;
+  }
+}
+@media(max-width:600px){
+  html{
+    font-size: 50%;
+  }
+  /* project */
+  #portfolio {
+    padding: 3rem 5rem;
+  }
+  .projects-list {
+    flex-direction: column;
+   }
+   .project{
+     margin: 3rem auto;
+     width: 100%;
+   }
+   .project-image{
+    width: 100%;
+   }
+   .project-image img{
+    width: 100%;
+   }
+   .about-me {
+    padding: 0 5rem;
+    transform: translateY(-7rem);
+  }
+  /* footer */
+  footer {
+    padding: 3rem 5rem;
+  }
+  .contact {
+    padding: 3rem 0;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .form,.address{
+    width: 100%;
+    margin: 3rem 0;
+  }
+  /* Education */
+  #education {
+    padding: 3rem 5rem;
+  }
+  .education-sec {
+    padding-top: 3rem;
+  }
+  .each-edu {
+    width: 100%;
+  }
+  .each-edu:nth-child(2n) {
+    left: 0%;
+  }
+  .each-edu:nth-child(2n + 1) {
+    text-align: left;
+  }
+  .each-edu:nth-child(2n +1)::after {
+    right: 0%;
+    left: -5%;
+  }
+  .each-edu:nth-child(2n)::after {
+    left: -5%;
+    right: 0%;
+  }
+  .timeline {
+    left: -5%;
+  }
+  /* Skills */
+  #skills {
+    padding: 3rem 5rem;
+  }
+  /* Work */
+  #experience {
+    padding: 3rem 5rem;
+  }
+  .work-ex {
+    padding-top: 3rem;
+  }
+  .work {
+    width: 100%;
+  }
+  .work:nth-child(2n + 1) {
+    text-align: left;
+  }
+  .work:nth-child(2n) {
+    left: 0%;
+  }
+  .work:nth-child(2n +1)::after {
+    left: -5%;
+  }
+  .work:nth-child(2n)::after {
+    left: -5%;
+  }
+}
