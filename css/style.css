@@ -125,7 +125,7 @@ footer {
 footer h2 {
   text-align: center;
 }
-.contact {
+#contact {
   padding: 5rem 0;
   display: flex;
   justify-content: space-between;
@@ -142,6 +142,7 @@ textarea {
   padding-bottom: 1rem;
   border-bottom: 3px solid white;
   margin-bottom: 5rem;
+  outline: none;
 }
 button {
   background: none;
@@ -221,7 +222,7 @@ p {
 .work:nth-child(2n) {
   left: 55%;
 }
-.work:nth-child(2n +1)::after {
+.work:nth-child(2n + 1)::after {
   content: "";
   position: absolute;
   height: 0.7rem;
@@ -294,7 +295,7 @@ p {
 .each-edu:nth-child(2n + 1) {
   text-align: right;
 }
-.each-edu:nth-child(2n +1)::after {
+.each-edu:nth-child(2n + 1)::after {
   content: "";
   position: absolute;
   height: 0.7rem;
@@ -327,16 +328,16 @@ p {
   color: rgb(108, 179, 1);
 }
 /* Responsive Design */
-@media(max-width:850px){
+@media (max-width: 850px) {
   .projects-list {
-   flex-direction: column;
+    flex-direction: column;
   }
-  .project{
+  .project {
     margin: 5rem auto;
   }
 }
-@media(max-width:600px){
-  html{
+@media (max-width: 600px) {
+  html {
     font-size: 50%;
   }
   /* project */
@@ -345,18 +346,18 @@ p {
   }
   .projects-list {
     flex-direction: column;
-   }
-   .project{
-     margin: 3rem auto;
-     width: 100%;
-   }
-   .project-image{
+  }
+  .project {
+    margin: 3rem auto;
     width: 100%;
-   }
-   .project-image img{
+  }
+  .project-image {
     width: 100%;
-   }
-   .about-me {
+  }
+  .project-image img {
+    width: 100%;
+  }
+  .about-me {
     padding: 0 5rem;
     transform: translateY(-7rem);
   }
@@ -364,13 +365,14 @@ p {
   footer {
     padding: 3rem 5rem;
   }
-  .contact {
+  #contact {
     padding: 3rem 0;
     display: flex;
     flex-direction: column;
     margin: 0 auto;
   }
-  .form,.address{
+  .form,
+  .address {
     width: 100%;
     margin: 3rem 0;
   }
@@ -390,7 +392,7 @@ p {
   .each-edu:nth-child(2n + 1) {
     text-align: left;
   }
-  .each-edu:nth-child(2n +1)::after {
+  .each-edu:nth-child(2n + 1)::after {
     right: 0%;
     left: -5%;
   }
@@ -421,7 +423,7 @@ p {
   .work:nth-child(2n) {
     left: 0%;
   }
-  .work:nth-child(2n +1)::after {
+  .work:nth-child(2n + 1)::after {
     left: -5%;
   }
   .work:nth-child(2n)::after {
