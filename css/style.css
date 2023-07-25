@@ -76,45 +76,65 @@ li a {
   flex-wrap: wrap;
   justify-content: space-around;
 }
-.skills-items div {
+.skills-items .skill-progress {
   display: block;
   width: 15rem;
   height: 3rem;
   border: 2px solid black;
   border-radius: 1rem;
   margin-top: 5rem;
-  padding-left: 1rem;
+  font-weight: 500;
+  overflow: hidden;
 }
-.c,
-.sql {
+.skill-name{
+  padding-left: 10%;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.eighty-percentage {
+  width: 80%;
+  height: 100%;
+}
+.ninty-percentage {
+  width: 90%;
+  height: 100%;
+}
+.seventyfive-percentage {
+  width: 75%;
+  height: 100%;
+}
+.seventy-percentage {
+  width: 70%;
+  height: 100%;
+}
+.nintyfive-percentage {
+  width: 95%;
+  height: 100%;
+}
+.sixty-percentage {
+  width: 60%;
+  height: 100%;
+}
+.bc-blue {
   background-color: rgb(80, 80, 243);
   color: #f0f0f0;
-  font-weight: 700;
 }
-.java,
-.css,
-.php {
+.bc-violet {
   background-color: rgb(163, 4, 177);
   color: #fa8787;
-  font-weight: 700;
 }
-.html,
-.js {
+.bc-orange {
   background-color: rgb(254, 76, 0);
   color: #f0f0f0;
-  font-weight: 700;
 }
-.dsa,
-.bs {
+.bc-green {
   background-color: rgb(123, 254, 0);
   color: #0050fe;
-  font-weight: 700;
 }
-.python,
-.cpp {
+.bc-skyblue {
   background-color: rgb(0, 229, 255);
   color: #fffb00;
-  font-weight: 700;
 }
 /* -------Footer//Contact Us */
 footer {
