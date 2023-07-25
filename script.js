@@ -38,5 +38,7 @@ function checkScroll() {
     }
     animationDone = 1;
   }
-  return;
+  if (skillId.getBoundingClientRect().top > btm) {
+    animationDone = 0;
+  }
 }
