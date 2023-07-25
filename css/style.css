@@ -71,12 +71,12 @@ li a {
   text-align: center;
   color: blue;
 }
-.skills-items {
+#skill-items {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
-.skills-items .skill-progress {
+#skill-items .skill-progress {
   display: block;
   width: 15rem;
   height: 3rem;

@@ -15,3 +15,28 @@ for (let i = 1; i < navBarList.length;i++) {
     },10);
   });
 }
+let btm = window.innerHeight;
+let skills = document.querySelectorAll(".skill-progress>div");
+let skillId = document.getElementById("skill-items");
+var animationDone = 0;
+window.addEventListener("scroll", checkScroll,animationDone);
+function checkScroll() {
+  if (!animationDone && skillId.getBoundingClientRect().top <= btm) {
+    for (let i = 0; i < skills.length; i++){
+      let skillWidth = skills[i].clientWidth;
+      let iniWidth = 0;
+      skills[i].style.width = "0px";
+      let widthIncre = setInterval(function () {
+        if (iniWidth >= skillWidth) {
+          clearInterval(widthIncre);
+          return;
+        }
+        skills[i].style.width = iniWidth + "px";
+        iniWidth += 1;
+      }, 10);
+
+    }
+    animationDone = 1;
+  }
+  return;
+}
